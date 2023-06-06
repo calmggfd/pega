@@ -71,3 +71,31 @@ body{
     border-radius: 3rem;
     padding: 1rem 3rem;
 }
+
+.word {
+    font-size: 47px;
+    color: #1d6bb3;
+    font-family: sans-serif;
+    font-size: 46;
+    font-weight: 500;
+    height: 46;
+}
+
+.word p {
+    display: none;
+    animation: typing 4s steps(40, end);
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 47px;
+    color: #1d6bb3;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
