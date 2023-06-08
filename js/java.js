@@ -36,7 +36,7 @@ var wordflick = function() {
         offset--;
       }
     }
-    document.querySelector('.word').textContent = part;
+    document.querySelector('.fg').textContent = part;
   }, speed);
 };
 

@@ -15,9 +15,29 @@ a{
 }
 
 body{
-    font-size: 16px;
+    font-size: 21px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
+}
+
+.header.container{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    justify-content: space-between;
+}
+
+.nav-container{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-container{
+    max-width: 80rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
 }
 
 .container{
@@ -26,31 +46,118 @@ body{
     margin: 0 auto;
 }
 
+.dos-columnas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15rem;
+}
+
 
 /* HEADER */
 
+.container{
+    justify-content: space-between;
+    align-items: center;
+    display: block;
+}
+
+.header{
+    display: block;
+    box-shadow: 5px 0px -16px rgba(0,0,0,.65);
+}
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem auto;
+    top: 0;
+    width: 100%;
+    padding: 15px ;
+    background-color: white;
+    font-size: 20px;
+    color: #FFFFFF;
+    position: fixed;
+    box-shadow: 5px 0px -16px rgba(0,0,0,.65);
+    margin: 1px auto;
 }
 
-.logo{
-    width: 66.6167px;
-    height: 66.6167px;
-    transition: all 300ms;
-    cursor: pointer;
+.nav-brand{
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* width: 145px;
+    height: 45px; */
 }
 
-.logo:hover{
+.w-nav-brand{
+    float: left;
+    color: #333;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-logo{
+    width: 145px;
+    height: 45px;
+}
+
+img{
+    max-width: 100%;
+    display: inline-block;
+}
+
+.nav-brand:hover{
     transform: scale(1.1, 1.1);
 }
 
-.logo > img{
+.nav-brand > img{
     max-width: 100%;
     max-height: 100%;
     margin-left: 2rem;
+}
+
+/* MENU ENLACES */
+
+.hidden{
+    display: none;
+}
+
+.w-dropdown{
+    text-align: left;
+    z-index: 900;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-link{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-link{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: Montserrat,sans-serif;
+}
+
+.w-nav-link{
+    vertical-align: top;
+    color: #222;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.a{
+    background-color: transparent;
 }
 
 .nav{
@@ -61,41 +168,63 @@ body{
 }
 
 .nav > a{
-    color: #1d6bb3;
+    color: #7e7e7e;
     margin-left: 5rem;
     padding: 1rem;
 }
 
-.nav > a:last-child{
+.dropdown > a:last-child{
     background-color: #1d6bb3;
     border-radius: 3rem;
     padding: 1rem 3rem;
+    color: #fff;
 }
 
-.word {
-    font-size: 47px;
+/* SECTION */
+
+.header-grid_left home{
+    padding-bottom: 1rem;
+    text-align: left;
+    
+}
+
+.header-grid_left{
+    padding-top: 8.75rem;
+}
+
+.fg {
+    height: 3rem;
     color: #1d6bb3;
-    font-family: sans-serif;
-    font-size: 46;
+    font-size: 3rem;
     font-weight: 500;
-    height: 46;
 }
 
-.word p {
-    display: none;
-    animation: typing 4s steps(40, end);
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: 47px;
-    color: #1d6bb3;
+@keyframes typing {
+from {
+    width: 0;
+}
+to {
+    width: 100%;
+}
+}
+
+.text-size-medium{
+    color: #7e7e7e;
+    margin-left: 5rem;
+    padding: 1rem;
+  }
+
+  .button-install > a{
+    background-color: #1d6bb3;
+    border-radius: 3rem;
+    padding: 1rem 3rem;
+    color: aliceblue;
   }
   
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  
+/* IMAGEN MUJER IZQUIERDA */
+
+.info-img{
+    box-sizing: border-box;
+    max-width: 100%;
+    display: inline-block;
+}
